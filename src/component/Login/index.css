@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6f0d7;
+
+}
+
+.content {
+    max-width: 400px;
+    margin-bottom: 5px;
+    padding: 30px;
+    background-color: #f5f2cb;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.content .content-email,
+.content .content-password{
+    margin-right: 100%;
+    color: #030f04;
+    /* border: 2px solid black; */
+}
+
+.content .content-date{
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    
+}
+
+.content .content-gender{
+    text-align: left;
+}
+
+.content .title {
+    text-align: center;
+    font-size: 35px;
+    font-style: bold;
+    color: black;
+    
+}
+
+.content .email,
+.content .password {
+    text-align: left;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.content button {
+    border: 1px solid black;
+    margin: 5px;
+    color: blue;
+}
