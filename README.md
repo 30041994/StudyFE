@@ -31,7 +31,7 @@ Chạy command: [git clone https://github.com/30041994/testupsourcecode.git]
 Vào thư mục code đã clone
 Chạy cmd -> gõ câu lệnh [code .]
 Vào màn hình terminal
-Chạy câu lệnh: [git i]
+Chạy câu lệnh: [npm i]
 
 # Chạy thử trên local
 
