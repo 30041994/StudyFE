@@ -5,11 +5,10 @@ import { useState } from "react";
 function login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  function handleSubmit(event){
+  function handleSubmit(event) {
     event.preventDefault();
-    
   }
-  
+
   return (
     <form onSubmit={handleSubmit}>
       <div className="content">
@@ -19,14 +18,14 @@ function login() {
           className="email"
           type="email"
           placeholder="abc@gmail.com"
-          onChange={e => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
         ></input>
         <label className="content-password">Password</label>
         <input
           className="password"
           type="password"
           placeholder="*********"
-          onChange={e => setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
         ></input>
         <button>
           <Link to="/register">SignUp</Link>
