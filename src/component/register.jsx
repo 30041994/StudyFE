@@ -1,6 +1,6 @@
 // import React from 'react'
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./index.css";
 import axios from "axios";
 
@@ -27,7 +27,8 @@ function Register() {
 
       // Xử lý kết quả từ backend
       console.log(response.data);
-      window.location.href = "http://localhost:5173";
+      // window.location.href = "http://localhost:5173";
+      navigate("/");
     } catch (error) {
       // Xử lý lỗi
       console.error("Error during login:", error);
@@ -37,12 +38,13 @@ function Register() {
     <>
       <div className="content">
         <div className="title">Register</div>
-        <label className="content-email">Email</label>
+        <label className="content-email">*Email</label>
         <input
           className="email"
           onChange={(e) => setEmail(e.target.value)}
+          placeholder="abc@gmail.com"
         ></input>
-        <label className="content-password">Password</label>
+        <label className="content-password">*Password</label>
         <input
           className="password"
           type="password"
@@ -72,6 +74,11 @@ function Register() {
           <label htmlFor="option2">Nữ</label>
         </div>
         <button onClick={handleSubmit}>Submit</button>
+        {/* <button onClick={handleSubmit}>
+          <Link onClick={handleSubmit} to="/">
+            Submit
+          </Link>
+        </button> */}
       </div>
     </>
   );
